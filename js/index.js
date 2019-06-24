@@ -2,4 +2,4 @@
 import Main from './Main';
 
 
-  ReactDOM.render(<App/>, document.getElementById('list'));
+  ReactDOM.render(<Main/>, document.getElementById('list'));
