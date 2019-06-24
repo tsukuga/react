@@ -2,7 +2,7 @@ import React from 'react';
 import {Component} from 'react';
 import MakeLists from './MakeLists';
 
-class Main extends React.Component{
+export default class Main extends Component{
   render(){
     const Lists = {
         '国際総合学類/国際開発学/2015':[
@@ -1339,9 +1339,9 @@ class Main extends React.Component{
     return(
       {Lists.map((key)=>{
         return(
-        <MakeLists value={value} key={key}/>
+        <MakeLists value={this.value} key={this.key}/>
         )
       })}
     )
   }
-}export default Main;
+}
