@@ -1,5 +1,6 @@
 
 import React from 'react';
+import {Component} from 'react';
 
 class MakeLists extends React.Component{
   render(){
