@@ -14,7 +14,7 @@
     
   <script type="text/babel">
   
-class parent extends React.Component {
+class Parent extends React.Component {
   constructor(props) {
     super(props);
 
@@ -29,13 +29,13 @@ class parent extends React.Component {
   render() {
     return (
       <div>
-        <child dataHoge={() => { this.hogeFunc(); }} />
+        <Child dataHoge={() => { this.hogeFunc(); }} />
       </div>
     );
   }
 }
 
-class child extends React.Component {
+class Child extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -56,7 +56,7 @@ class child extends React.Component {
 }
 
 
-  ReactDOM.render(<parent/>, document.getElementById('root'));
+  ReactDOM.render(<Parent/>, document.getElementById('root'));
   </script>
   </body>
 </html>
