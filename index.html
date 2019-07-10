@@ -24,7 +24,7 @@ class Parent extends React.Component {
   }
 
   hogeFunc() {
-    this.setState({ hoge: '変えたぞ' });
+    this.setState({ hoge: this.state.data });
   }
   render() {
     return (
@@ -39,6 +39,7 @@ class Child extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+     data:'変えたぞ'
     };
   }
 
